@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>{% block title %} uFriend {% endblock %}</title>
+	<h1>  uFriend </h1>
+		{% block extra_head %}{% endblock %}
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<style>
+body{
+	font-family:Arial,Helvetica,sans-serif;
+	font-size: 12px;
+}
+</style>
+</head>
+<body>
+	<hr>
+
+	<div class="user_log_in">
+      {{ state }}
+      {% if user.is_authenticated %}
+			<p> Hello,{{ username }} </p>
+			<a href="{% url 'django.contrib.auth.views.logout' %}">logout</a>
+      {% else %}
+			<p> Hello, guest ! </p>
+			<a href="{% url 'django.contrib.auth.views.login' %}">login</a>
+      {% endif %}
+	</div>
+	<hr>
+	{% block main_body %} 
+	
+	
+	{% endblock %} 
+	
+
+</body>
+
+<footer>
+	<hr>
+	<p>Copyright by BlueberryCupcake Inc., 2015</p>
+
+</footer>
+</html>
