@@ -1,0 +1,6 @@
+/authen/*.pyc
+/authen/migrations/*.pyc
+/home/*.pyc
+/home/migrations/*.pyc
+/ufriend/*.pyc
+/*.sqlite3
