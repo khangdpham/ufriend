@@ -10,6 +10,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
 	#url(r'^login/$','authen.views.login_user'),
 	url(r'^login/$', 'django.contrib.auth.views.login'),
+	url(r'^signup/$', 'authen.views.register',name='signup'),
 	url(r'^logout/$', 'django.contrib.auth.views.logout',
 		{'next_page': 'home.views.index'}),
 	url(r'^$','home.views.index',name='home'),
