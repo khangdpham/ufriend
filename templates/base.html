@@ -5,6 +5,9 @@
 	<h1>  uFriend </h1>
 		{% block extra_head %}{% endblock %}
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/main_sauce.css' %}">
 <style>
 body{
 	font-family:Arial,Helvetica,sans-serif;
@@ -14,7 +17,13 @@ body{
 </head>
 <body>
 	<hr>
-
+        {% block nav %}
+        <ul id="nav">
+            <li>{% block nav-home %}<a href="{% url 'home' %}">Home</a>{% endblock %}</li>
+            <li>{% block nav-about %}<a href="{% url 'nav_about' %}">About</a>{% endblock %}</li>
+            <li>{% block nav-contact %}<a href="{% url 'nav_contact' %}">Contact</a>{% endblock %}</li>
+        </ul>
+        {% endblock %}
 	<div class="user_log_in">
       {{ state }}
       {% if user.is_authenticated %}
