@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Create Post - {{ block.super }}{% endblock %}
+
+{% block main_body %}
+	{% if events %}
+		<ul>
+		{% for e in events %}
+			<li>{{ e.title }} - by <b>{{ e.creator }}</b> </li>
+		{% endfor %}
+		</ul>
+	{% else %}
+		<p> No events today </p>
+	{% endif %}
+	
+
+{% endblock %}

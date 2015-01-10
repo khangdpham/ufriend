@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Create Post - {{ block.super }}{% endblock %}
+
+{% block main_body %}
+	<p> This is {{ username }} </p>
+    <form method="POST" action="">
+		{{ forms.as_ul }}
+        <input type="submit" value="Create Event" />
+    </form>
+{% endblock %}
