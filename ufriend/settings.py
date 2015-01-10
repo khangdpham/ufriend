@@ -29,7 +29,7 @@ STATICFILES_DIRS = (
 )
 
 
-
+LOGIN_URL= '/login/'
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
@@ -55,6 +55,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 	'home',
 	'authen',
+	'events',
 )
 BACKEND = (
 	'django.core.cache.backends.memcached.MemcachedCache',

@@ -5,5 +5,11 @@
 
 
 {% block main_body %}
-		<p>  Hello world </p>
+		{% if user.is_authenticated %}
+
+			<p>Create new post </p>
+		{% endif %}
+		
+		
+		
 {% endblock %}

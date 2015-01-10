@@ -32,6 +32,7 @@ body{
 			<ul>
 				<li>{% block nav-home %}<a href="{% url 'home' %}">Home</a>{% endblock %}</li>
 				<li>{% block nav-profile %}<a href="{% url 'profile' %}">Profile</a>{% endblock %}</li>
+				<li>{% block nav-create-post %}<a href="{% url 'create_new_post' %}">Create new Post</a>{% endblock %}</li>
 				<li>{% block nav-about %}<a href="{% url 'nav_about' %}">About</a>{% endblock %}</li>
 				<li>{% block nav-contact %}<a href="{% url 'nav_contact' %}">Contact</a>{% endblock %}</li>
 			</ul>
