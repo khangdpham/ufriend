@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}View Post - {{ block.super }}{% endblock %}
+
+{% block main_body %}
+		{% if event %}
+			<p>  {{ event }} </p>
+		{% else %}
+			<p> Could not find the post </p>
+		{% endif %}
+{% endblock %}

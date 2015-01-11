@@ -6,7 +6,7 @@
 	{% if events %}
 		<ul>
 		{% for e in events %}
-			<li>{{ e.title }} - by <b>{{ e.creator }}</b> </li>
+			<li><a href="view/{{ e.post_id }}">{{ e.title }} </a>- by <b>{{ e.creator }}</b></li>
 		{% endfor %}
 		</ul>
 	{% else %}
