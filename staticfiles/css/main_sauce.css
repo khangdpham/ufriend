@@ -8,6 +8,33 @@
 #nav {
 	clear :both;
 }
+html { 
+	margin-left:auto;
+	margin-right:auto;
+	height: 100%;
+	width: 65%;
+ }
+
+.head-main-wrap{
+  width:auto;
+	height:100%;
+	background-color:#cecece;
+	background-repeat:no-repeat;
+	background-size:cover;
+	overflow:hidden;
+
+}
+.body-main-wrap{
+  width:auto;
+        height:100%;
+        background-color:#acacac;
+        background-repeat:no-repeat;
+        background-size:cover;
+        overflow:hidden;
+
+}
+
+
 
 #nav ul {
     list-style-type: none;

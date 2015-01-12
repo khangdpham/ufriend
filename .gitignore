@@ -5,3 +5,4 @@
 *.pyc
 /ufriend/*.pyc
 /*.sqlite3
+*.sh

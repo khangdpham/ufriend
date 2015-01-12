@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
+	<div class= "head-main-wrap">
 	<title>{% block title %} uFriend {% endblock %}</title>
 	<h1>  uFriend </h1>
 		{% block extra_head %}{% endblock %}
@@ -13,7 +14,8 @@
 				<p> Hello, guest ! </p>
 				<a href="{% url 'django.contrib.auth.views.login' %}">login</a>
 		  {% endif %}
-		</div>
+		</div>	
+	</div> <!-- End head-main-wrap -->
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 
 {% load static %}
@@ -24,8 +26,10 @@ body{
 	font-size: 12px;
 }
 </style>
+
 </head>
 <body>
+	<div class="body-main-wrap">
 	<hr>
         {% block nav %}
 		<div id="nav">
@@ -45,12 +49,13 @@ body{
 	
 	{% endblock %} 
 	
-
+  </div>  <!-- Main Wrap -->
 </body>
 
 <footer>
+	<div class="footer-main-wrap">
 	<hr>
 	<p>Copyright by BlueberryCupcake Inc., 2015</p>
-
+	</div>
 </footer>
 </html>
