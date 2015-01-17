@@ -3,9 +3,17 @@
 {% block title %}Create Post - {{ block.super }}{% endblock %}
 
 {% block main_body %}
-	<p> This is {{ username }} </p>
     <form method="POST" action="">
-		{{ forms.as_ul }}
+		<label> Creator : {{ username }}</label>
+		<br />
+		<label> Tittle  :</label>
+		<br />
+		{{ forms.title }}
+		<br />
+		<label> Description :</label>
+		<br />
+		{{ forms.description }} 
+		<br />
         <input type="submit" value="Create Event" />
     </form>
 {% endblock %}

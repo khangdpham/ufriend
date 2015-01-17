@@ -17,6 +17,14 @@
 		{% if user.is_authenticated %}
 			<div id="page_header">
 				<h1><span>Profile : {{ username }}</span></h1>
+
+				<h2>Your events :</h2>
+				<ul>
+				{% for e in events %}
+					<li>{{ e.title }} </li>
+				{% endfor %}
+				</ul>
+					
 			</div>
 		{% endif %}
 
