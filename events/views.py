@@ -2,7 +2,6 @@ from django.shortcuts import render, render_to_response, get_object_or_404
 from django.template import RequestContext
 from events.models import Event , Attendance
 from events.forms import EventForm
-from dateutil.parser import parse
 from django.core.urlresolvers import reverse
 from django.http import HttpResponseRedirect , Http404
 from django.contrib import messages
